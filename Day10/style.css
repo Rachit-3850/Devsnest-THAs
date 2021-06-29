@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: centre;
+}
+.gameContainer {
+  margin-top: 10px;
+}
+.text {
+  padding: 5px;
+}
+.box {
+  margin-top: 20px;
+  height: 624px;
+  width: 836px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  perspective: 1000px;
+}
+
+img {
+width: 200px;
+height:200px;
+}
+.card {
+  border: 4px solid black;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+.back {
+  position: absolute;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+.hide {
+	visibility: hidden;
+}
