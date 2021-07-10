@@ -1,6 +1,9 @@
 const cards = document.querySelectorAll(".card");
+const container =document.querySelector(".box");
+const bo=document.querySelector('body');
 let hasFlipCard = false;
 let firstCard, secondCard;
+let count=0;
 function flipCard() {
   if(this === firstCard) return;
   this.classList.add("flip");
@@ -16,6 +19,16 @@ function flipCard() {
     hasFlipCard =false;
     secondCard = this;
     checkIt();
+  }
+  if(count === 12)
+  {
+    setTimeout(() =>{
+      const div=document.createElement('div')
+      div.className='win';
+      div.innerHTML='YOU WIN!';
+      bo.appendChild(div);
+    },2000)
+
   }
 }
 function checkIt() {
@@ -34,7 +47,7 @@ function success() {
   firstCard.classList.add('hide');
   secondCard.classList.add('hide');
   reset();},1000);
-  
+  count=count+2;
 }
 function fail() {
   // console.log("fail");

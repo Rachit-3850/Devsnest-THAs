@@ -25,7 +25,9 @@
 }
 .components {
     margin: 5px;
-    width: 600px;
+    width: 500px;
+    height: 400px;
+    overflow: scroll;
 }
 .heading {
     font-size: 30px;

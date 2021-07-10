@@ -43,3 +43,9 @@ height:200px;
 .hide {
 	visibility: hidden;
 }
+.win {
+  color: aliceblue;
+  font-size: 60px;
+  position: absolute;
+  top: 80px;
+}
