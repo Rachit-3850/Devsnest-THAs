@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,NavLink} from 'react-router-dom';
 import { UserContext } from '../context';
 
 const NavBar = () => {
@@ -9,16 +9,16 @@ const NavBar = () => {
         <nav>
             <ul className="container">
                 <li>
-                    <Link to='/'>Home</Link>
+                    <NavLink to='/' activeStyle={{color: 'green'}} exact>Home</NavLink>
                 </li>
                 <li>
-                    <Link to='/about'>About</Link>
+                    <NavLink to='/about' activeStyle={{color: 'green'}} exact>About</NavLink>
                 </li>
                 <li>
                     {
                         user.isLoggedIn ? (
                             <li>
-                                <Link to='/profile'>Profile</Link>
+                                <NavLink to='/profile' activeStyle={{color: 'green'}} exact>Profile</NavLink>
                             </li>
                         ) : (
                             <li>
@@ -31,7 +31,7 @@ const NavBar = () => {
                     {
                         user.isLoggedIn ? (
                             <li>
-                                <Link to='/dashboard'>Dashboard</Link>
+                                <NavLink to='/dashboard' activeStyle={{color: 'green'}} exact>Dashboard</NavLink>
                             </li>
                         ) : (
                             <li>
