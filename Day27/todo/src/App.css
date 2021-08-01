@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 117);
+}
+.App {
+    margin-top: 50px;
+    padding: 20px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    overflow:auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+input {
+    padding: 5px;
+    padding-left: 10px;
+}
+.input {
+    margin-top: 10px;
+}
+button {
+    padding: 5px;
+    width: 50px;
+    margin-left: 20px;
+}
+/* .line {
+    height: 2px;
+    background-color: black;
+} */
+.inline {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 0px;
+}
+.content {
+    padding: 5px;
+    padding-left: 0px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
