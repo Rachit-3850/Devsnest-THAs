@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    font-family:cursive;
+    /* background-color: black;
+    color: aliceblue; */
+}
+button {
+    padding: 5px;
+    margin: 5px;
+}
+.card {
+    height: 400px;
+    width: 320px;
+    /* border: 2px solid grey; */
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input {
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    padding-left: 10px ;
+}
+.bttn {
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: rgb(14, 138, 240);
+}
+/* li {
+    display: inline;
+    margin-right: 12px;
+    font-size: 15px;
+} */
+.zzz {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.time {
+    text-align: center;
+    font-size: 25px;
+    font-weight:lighter;
+}
+.name {
+    text-align: center;
+    font-size: 28px;
+}
+.text {
+    text-align: center;
+}
+.image {
+    text-align: center;
+    margin-top: 5px;
+}
+img {
+    height: 90px;
+}
+.temp {
+    text-align: center;
+    font-size: 28px;
+}
+.zz {
+    margin-top: 30px;
+    font-size: smaller;
+}
+.bold {
+    font-weight: bold;
+    font-family:cursive;
+}
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+ul {
+    margin: 0;
+}
+.dark {
+    background-color: black;
+}
+.darkish {
+    background-color: rgba(27, 27, 27);
+    color: azure;
+}
